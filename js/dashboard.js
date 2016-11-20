@@ -5,8 +5,7 @@
 
 
 // Constant definitions
-UNKNOWN_VALUE_STRING = 'Unknown';
-NOTMAN_NETATMO_API_URL = 'http://notman.herokuapp.com/api/netatmo/environment';
+NOTMAN_NETATMO_API_URL = 'https://notman.herokuapp.com/api/netatmo/environment';
 NETATMO_MODULE_FLOORS = [
   'Notman-M034',
   'Notman-M134',
