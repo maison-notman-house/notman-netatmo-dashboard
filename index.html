@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Notman Netatmo Dashboard </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/notman.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.0.2/ui-bootstrap-tpls.min.js"></script>
+    <script type="text/javascript" src="js/dashboard.js"></script>
+  </head>
+  <body ng-app="dashboard">
+    <!----- BEGIN CONTENT SECTION ----------------------------------------->
+	  <div ng-controller="DashCtrl" class="container-fluid">
+      <div class="row">
+        <div class="col-md-3" id="m3">
+          <h1> 3 </h1>
+          {{floors[3].Temperature}} C <br>
+          {{floors[3].CO2}} ppm CO<sub>2</sub> <br>
+          {{floors[3].Humidity}} % humidity
+        </div>
+        <div class="col-md-3" id="m2">
+          <h1> 2 </h1>
+          {{floors[2].Temperature}} C <br>
+          {{floors[2].CO2}} ppm CO<sub>2</sub> <br>
+          {{floors[2].Humidity}} % humidity <br>
+          {{floors[2].Noise}} dB noise <br>
+          {{floors[2].Pressure}} mb pressure
+        </div>
+        <div class="col-md-3" id="m1">
+          <h1> 1 </h1>
+          {{floors[1].Temperature}} C <br>
+          {{floors[1].CO2}} ppm CO<sub>2</sub> <br>
+          {{floors[1].Humidity}} % humidity
+        </div>
+        <div class="col-md-3" id="m0">
+          <h1> 0 </h1>
+          {{floors[0].Temperature}} C <br>
+          {{floors[0].CO2}} ppm CO<sub>2</sub> <br>
+          {{floors[0].Humidity}} % humidity
+        </div>
+      </div>
+    </div>
+    <!----- END CONTENT SECTION ----------------------------------------->
+    <footer class="footer">
+      <a href="https://github.com/maison-notman-house/notman-netatmo-dashboard" target="_blank"> notman-netatmo-dashboard </a>
+    </footer>
+  </body>
+</html>
